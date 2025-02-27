@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Notes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Téléchargement .env</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mes Notes</h1>
-        <nav>
-            <ul>
-                <li><a href="assets/exercice1.html">Exercice 1</a></li>
-                <li><a href="assets/qcm.html">QCM</a></li>
-                <li><a href="assets/calcul nombre or.html">Calcul Nombre Or</a></li>
-                <li><a href="assets/banque.html">Banque 1</a></li>
-            </ul>
-        </nav>
-    </div>
+
+    <h2>Téléchargement du fichier .env</h2>
+    <a href="assets/.env" download class="download-btn">
+        Télécharger le fichier .env
+    </a>
+
 </body>
 </html>
