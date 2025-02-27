@@ -5,34 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Téléchargement .env</title>
     <style>
+        /* Styles de la page */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
+            background-color: #000; /* Fond noir */
+            color: white;
+            display: flex;
+            justify-content: center;  /* Centre horizontalement */
+            align-items: center;      /* Centre verticalement */
+            height: 100vh;            /* Hauteur totale de la fenêtre */
+            margin: 0;                /* Supprime les marges */
         }
+
+        /* Style du bouton */
         .download-btn {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 18px;
             font-weight: bold;
             color: white;
-            background-color: #28a745;
+            background-color: #28a745; /* Vert */
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
+
+        /* Effet au survol */
         .download-btn:hover {
             background-color: #218838;
+            transform: scale(1.1); /* Zoom léger */
         }
     </style>
 </head>
 <body>
 
-    <h2>Téléchargement du fichier .env</h2>
     <a href="assets/.env" download class="download-btn">
-        Télécharger le fichier .env
+        ⬇ Télécharger le fichier .env
     </a>
 
 </body>
